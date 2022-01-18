@@ -1,0 +1,102 @@
+body {
+  background-color: hsl(25, 87%, 60%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+
+.finn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-orelha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orelha {
+  width: 40px;
+  height: 40px;
+  background: white;
+}
+
+.cabeca, .corpo, .pe {
+  width: 150px;
+}
+
+.cabeca {
+  height: 100px;
+  background-color: white;
+  position: relative;
+}
+
+.cabeca::before {
+  content: "";
+  background: hsl(40, 72%, 89%);
+  width: 130px;
+  height: 70px;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  z-index: 1;
+}
+
+.corpo {
+  height: 100px;
+  background: hsl(192, 73%, 43%);
+}
+
+.pe {
+  height: 50px;
+  background: hsl(209, 72%, 37%);
+}
+
+
+.jake {
+  margin-left: 30px;
+  margin-top: 135px;
+  width: 120px;
+  height: 150px;
+  background-color: hsl(49, 86%, 55%);
+  /* position: relative; */
+}
+
+
+.boca-flex, .retangulo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.retangulo-flex {
+  margin-top: 50px;
+}
+
+.retangulo-boca {
+  position: absolute;
+  width: 66px;
+  height: 20px;
+  background-color: hsl(48, 81%, 48%);
+}
+
+.retangulo-boca::before {
+  content: "";
+  background-color: black;
+  width: 25px;
+  height: 8px;
+  position: absolute;
+  z-index: 7;
+  top: 12px;
+  left: 20px;
+}
+
+.boca {
+  background-color: hsl(48, 81%, 48%);
+  width: 20px;
+  height: 20px;
+}
+
